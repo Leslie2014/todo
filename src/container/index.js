@@ -28,7 +28,11 @@ class Todo extends React.Component {
     return (
       <div className="todo-wrapper">
         <TodoCreator addTodo={this.addTodo}/>
-        { todos.map((todo, i) => <TodoItem key={i} todo={todo} deleteTodo={this.deleteTodo}/>) }
+        { 
+          todos.map((todo, i) => (
+            <TodoItem key={i} todo={todo} deleteTodo={this.deleteTodo}/>
+            ))
+          }
       </div>
     )
   }
