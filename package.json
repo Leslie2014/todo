@@ -1,0 +1,59 @@
+{
+  "name": "todo-redux-enzyme",
+  "version": "1.0.0",
+  "description": "A demo to demostrate how to use enzyme test react component that embe redux",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "jest --findRelatedTests src/components/todo-creator/index.js"
+  },
+  "keywords": [
+    "redux",
+    "enzyme",
+    "react"
+  ],
+  "author": "xiye",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "enzyme": "^2.7.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "css-loader": "^0.26.2",
+    "express": "^4.15.2",
+    "jest": "^19.0.2",
+    "node-sass": "^4.5.0",
+    "react-addons-test-utils": "^15.4.2",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
