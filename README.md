@@ -15,7 +15,7 @@
 
 ## 启动 & 开发
 
-```
+```bash
 // clone 仓库
 git clone https://github.com/Leslie2014/todo.git
 
@@ -27,4 +27,23 @@ npm start
 
 // 跑测试用例
 npm test
+```
+
+## 目录
+
+```
+├── CHANGELOG.md 
+├── README.md
+├── __mocks__ // 一些需要mock的资源
+│   └── styleMock.js
+├── index.html
+├── package.json 
+├── src // 源文件
+│   ├── actions // redux action
+│   ├── components
+│   ├── constants
+│   ├── container
+│   ├── index.js
+│   └── reducers // redux reducer
+└── webpack.config.js // webpack 配置文件
 ```
