@@ -13,7 +13,7 @@
 - Sass support √
 - webpack √
 
-## 启动 & 开啡
+## 启动 & 开发
 
 ```
 // clone 仓库
